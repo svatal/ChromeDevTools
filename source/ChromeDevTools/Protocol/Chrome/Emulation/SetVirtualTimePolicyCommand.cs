@@ -20,6 +20,11 @@ namespace MasterDevs.ChromeDevTools.Protocol.Chrome.Emulation
 		/// Gets or sets If set, after this many virtual milliseconds have elapsed virtual time will be paused and a virtualTimeBudgetExpired event is sent.
 		/// </summary>
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
-		public long? Budget { get; set; }
+		public double Budget { get; set; }
+		/// <summary>
+		/// Gets or sets If set this specifies the maximum number of tasks that can be run before virtual is forced forwards to prevent deadlock.
+		/// </summary>
+		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+		public long? MaxVirtualTimeTaskStarvationCount { get; set; }
 	}
 }

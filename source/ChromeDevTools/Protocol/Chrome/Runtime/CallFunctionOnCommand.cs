@@ -13,13 +13,14 @@ namespace MasterDevs.ChromeDevTools.Protocol.Chrome.Runtime
 	public class CallFunctionOnCommand: ICommand<CallFunctionOnCommandResponse>
 	{
 		/// <summary>
-		/// Gets or sets Identifier of the object to call function on.
-		/// </summary>
-		public string ObjectId { get; set; }
-		/// <summary>
 		/// Gets or sets Declaration of the function to call.
 		/// </summary>
 		public string FunctionDeclaration { get; set; }
+		/// <summary>
+		/// Gets or sets Identifier of the object to call function on. Either objectId or executionContextId should be specified.
+		/// </summary>
+		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+		public string ObjectId { get; set; }
 		/// <summary>
 		/// Gets or sets Call arguments. All call arguments must belong to the same JavaScript world as the target object.
 		/// </summary>
@@ -50,5 +51,15 @@ namespace MasterDevs.ChromeDevTools.Protocol.Chrome.Runtime
 		/// </summary>
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
 		public bool? AwaitPromise { get; set; }
+		/// <summary>
+		/// Gets or sets Specifies execution context which global object will be used to call function on. Either executionContextId or objectId should be specified.
+		/// </summary>
+		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+		public long? ExecutionContextId { get; set; }
+		/// <summary>
+		/// Gets or sets Symbolic group name that can be used to release multiple objects. If objectGroup is not specified and objectId is, objectGroup will be inherited from object.
+		/// </summary>
+		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+		public string ObjectGroup { get; set; }
 	}
 }

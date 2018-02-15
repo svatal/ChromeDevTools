@@ -31,5 +31,10 @@ namespace MasterDevs.ChromeDevTools.Protocol.Chrome.Target
 		/// </summary>
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
 		public string BrowserContextId { get; set; }
+		/// <summary>
+		/// Gets or sets Whether BeginFrames for this target will be controlled via DevTools (headless chrome only, not supported on MacOS yet, false by default).
+		/// </summary>
+		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+		public bool? EnableBeginFrameControl { get; set; }
 	}
 }

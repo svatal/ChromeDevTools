@@ -2,7 +2,7 @@ using MasterDevs.ChromeDevTools;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 
-namespace MasterDevs.ChromeDevTools.Protocol.Chrome.CSS
+namespace MasterDevs.ChromeDevTools.Protocol.Chrome.DOMSnapshot
 {
 	/// <summary>
 	/// Details of post layout rendered text positions. The exact layout should not be regarded as stable and may change between versions.

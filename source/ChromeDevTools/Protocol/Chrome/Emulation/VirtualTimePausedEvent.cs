@@ -14,6 +14,6 @@ namespace MasterDevs.ChromeDevTools.Protocol.Chrome.Emulation
 		/// <summary>
 		/// Gets or sets The amount of virtual time that has elapsed in milliseconds since virtual time was first enabled.
 		/// </summary>
-		public long VirtualTimeElapsed { get; set; }
+		public double VirtualTimeElapsed { get; set; }
 	}
 }

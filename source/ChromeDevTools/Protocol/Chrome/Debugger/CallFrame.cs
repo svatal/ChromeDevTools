@@ -28,6 +28,10 @@ namespace MasterDevs.ChromeDevTools.Protocol.Chrome.Debugger
 		/// </summary>
 		public Location Location { get; set; }
 		/// <summary>
+		/// Gets or sets JavaScript script name or url.
+		/// </summary>
+		public string Url { get; set; }
+		/// <summary>
 		/// Gets or sets Scope chain for this call frame.
 		/// </summary>
 		public Scope[] ScopeChain { get; set; }

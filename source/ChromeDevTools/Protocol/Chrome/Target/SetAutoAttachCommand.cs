@@ -17,7 +17,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Chrome.Target
 		/// </summary>
 		public bool AutoAttach { get; set; }
 		/// <summary>
-		/// Gets or sets Whether to pause new targets when attaching to them. Use <code>Runtime.runIfWaitingForDebugger</code> to run paused targets.
+		/// Gets or sets Whether to pause new targets when attaching to them. Use `Runtime.runIfWaitingForDebugger` to run paused targets.
 		/// </summary>
 		public bool WaitForDebuggerOnStart { get; set; }
 	}

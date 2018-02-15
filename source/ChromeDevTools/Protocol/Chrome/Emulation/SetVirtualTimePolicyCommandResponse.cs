@@ -12,5 +12,9 @@ namespace MasterDevs.ChromeDevTools.Protocol.Chrome.Emulation
 	[SupportedBy("Chrome")]
 	public class SetVirtualTimePolicyCommandResponse
 	{
+		/// <summary>
+		/// Gets or sets Absolute timestamp at which virtual time was first enabled (milliseconds since epoch).
+		/// </summary>
+		public double VirtualTimeBase { get; set; }
 	}
 }

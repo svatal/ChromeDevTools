@@ -17,7 +17,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Chrome.Network
 		/// </summary>
 		public string InterceptionId { get; set; }
 		/// <summary>
-		/// Gets or sets If set this causes the request to fail with the given reason. Passing <code>Aborted</code> for requests marked with <code>isNavigationRequest</code> also cancels the navigation. Must not be set in response to an authChallenge.
+		/// Gets or sets If set this causes the request to fail with the given reason. Passing `Aborted` for requests marked with `isNavigationRequest` also cancels the navigation. Must not be set in response to an authChallenge.
 		/// </summary>
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
 		public string ErrorReason { get; set; }

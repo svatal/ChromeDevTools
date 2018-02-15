@@ -27,6 +27,11 @@ namespace MasterDevs.ChromeDevTools.Protocol.Chrome.Debugger
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
 		public string UrlRegex { get; set; }
 		/// <summary>
+		/// Gets or sets Script hash of the resources to set breakpoint on.
+		/// </summary>
+		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+		public string ScriptHash { get; set; }
+		/// <summary>
 		/// Gets or sets Offset in the line to set breakpoint at.
 		/// </summary>
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]

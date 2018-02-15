@@ -51,5 +51,10 @@ namespace MasterDevs.ChromeDevTools.Protocol.Chrome.Log
 		/// </summary>
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
 		public string WorkerId { get; set; }
+		/// <summary>
+		/// Gets or sets Call arguments.
+		/// </summary>
+		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+		public Runtime.RemoteObject[] Args { get; set; }
 	}
 }

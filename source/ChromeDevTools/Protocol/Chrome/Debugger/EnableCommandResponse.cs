@@ -12,5 +12,9 @@ namespace MasterDevs.ChromeDevTools.Protocol.Chrome.Debugger
 	[SupportedBy("Chrome")]
 	public class EnableCommandResponse
 	{
+		/// <summary>
+		/// Gets or sets Unique identifier of the debugger.
+		/// </summary>
+		public string DebuggerId { get; set; }
 	}
 }

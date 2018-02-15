@@ -20,6 +20,10 @@ namespace MasterDevs.ChromeDevTools.Protocol.Chrome.Network
 		/// </summary>
 		public Request Request { get; set; }
 		/// <summary>
+		/// Gets or sets The id of the frame that initiated the request.
+		/// </summary>
+		public string FrameId { get; set; }
+		/// <summary>
 		/// Gets or sets How the requested resource will be used.
 		/// </summary>
 		public Page.ResourceType ResourceType { get; set; }
@@ -27,16 +31,6 @@ namespace MasterDevs.ChromeDevTools.Protocol.Chrome.Network
 		/// Gets or sets Whether this is a navigation request, which can abort the navigation completely.
 		/// </summary>
 		public bool IsNavigationRequest { get; set; }
-		/// <summary>
-		/// Gets or sets HTTP response headers, only sent if a redirect was intercepted.
-		/// </summary>
-		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
-		public Dictionary<string, string> RedirectHeaders { get; set; }
-		/// <summary>
-		/// Gets or sets HTTP response code, only sent if a redirect was intercepted.
-		/// </summary>
-		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
-		public long? RedirectStatusCode { get; set; }
 		/// <summary>
 		/// Gets or sets Redirect location, only sent if a redirect was intercepted.
 		/// </summary>
@@ -47,5 +41,20 @@ namespace MasterDevs.ChromeDevTools.Protocol.Chrome.Network
 		/// </summary>
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
 		public AuthChallenge AuthChallenge { get; set; }
+		/// <summary>
+		/// Gets or sets Response error if intercepted at response stage or if redirect occurred while intercepting request.
+		/// </summary>
+		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+		public ErrorReason ResponseErrorReason { get; set; }
+		/// <summary>
+		/// Gets or sets Response code if intercepted at response stage or if redirect occurred while intercepting request or auth retry occurred.
+		/// </summary>
+		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+		public long? ResponseStatusCode { get; set; }
+		/// <summary>
+		/// Gets or sets Response headers if intercepted at the response stage or if redirect occurred while intercepting request or auth retry occurred.
+		/// </summary>
+		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+		public Dictionary<string, string> ResponseHeaders { get; set; }
 	}
 }

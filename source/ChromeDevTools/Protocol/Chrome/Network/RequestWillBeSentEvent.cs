@@ -16,7 +16,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Chrome.Network
 		/// </summary>
 		public string RequestId { get; set; }
 		/// <summary>
-		/// Gets or sets Loader identifier. Empty string if the request is fetched form worker.
+		/// Gets or sets Loader identifier. Empty string if the request is fetched from worker.
 		/// </summary>
 		public string LoaderId { get; set; }
 		/// <summary>

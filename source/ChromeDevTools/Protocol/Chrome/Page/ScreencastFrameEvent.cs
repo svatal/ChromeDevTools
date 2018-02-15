@@ -5,7 +5,7 @@ using System.Collections.Generic;
 namespace MasterDevs.ChromeDevTools.Protocol.Chrome.Page
 {
 	/// <summary>
-	/// Compressed image data requested by the <code>startScreencast</code>.
+	/// Compressed image data requested by the `startScreencast`.
 	/// </summary>
 	[Event(ProtocolName.Page.ScreencastFrame)]
 	[SupportedBy("Chrome")]

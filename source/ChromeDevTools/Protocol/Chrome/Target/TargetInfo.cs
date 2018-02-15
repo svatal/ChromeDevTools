@@ -27,5 +27,10 @@ namespace MasterDevs.ChromeDevTools.Protocol.Chrome.Target
 		/// Gets or sets Whether the target has an attached client.
 		/// </summary>
 		public bool Attached { get; set; }
+		/// <summary>
+		/// Gets or sets Opener target Id
+		/// </summary>
+		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+		public string OpenerId { get; set; }
 	}
 }

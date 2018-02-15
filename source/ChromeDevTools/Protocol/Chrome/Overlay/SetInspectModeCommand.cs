@@ -17,7 +17,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Chrome.Overlay
 		/// </summary>
 		public string Mode { get; set; }
 		/// <summary>
-		/// Gets or sets A descriptor for the highlight appearance of hovered-over nodes. May be omitted if <code>enabled == false</code>.
+		/// Gets or sets A descriptor for the highlight appearance of hovered-over nodes. May be omitted if `enabled == false`.
 		/// </summary>
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
 		public HighlightConfig HighlightConfig { get; set; }

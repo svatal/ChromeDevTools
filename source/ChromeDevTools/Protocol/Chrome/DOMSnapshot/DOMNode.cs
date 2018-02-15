@@ -11,15 +11,15 @@ namespace MasterDevs.ChromeDevTools.Protocol.Chrome.DOMSnapshot
 	public class DOMNode
 	{
 		/// <summary>
-		/// Gets or sets <code>Node</code>'s nodeType.
+		/// Gets or sets `Node`'s nodeType.
 		/// </summary>
 		public long NodeType { get; set; }
 		/// <summary>
-		/// Gets or sets <code>Node</code>'s nodeName.
+		/// Gets or sets `Node`'s nodeName.
 		/// </summary>
 		public string NodeName { get; set; }
 		/// <summary>
-		/// Gets or sets <code>Node</code>'s nodeValue.
+		/// Gets or sets `Node`'s nodeValue.
 		/// </summary>
 		public string NodeValue { get; set; }
 		/// <summary>
@@ -43,36 +43,36 @@ namespace MasterDevs.ChromeDevTools.Protocol.Chrome.DOMSnapshot
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
 		public bool? OptionSelected { get; set; }
 		/// <summary>
-		/// Gets or sets <code>Node</code>'s id, corresponds to DOM.Node.backendNodeId.
+		/// Gets or sets `Node`'s id, corresponds to DOM.Node.backendNodeId.
 		/// </summary>
 		public long BackendNodeId { get; set; }
 		/// <summary>
-		/// Gets or sets The indexes of the node's child nodes in the <code>domNodes</code> array returned by <code>getSnapshot</code>, if any.
+		/// Gets or sets The indexes of the node's child nodes in the `domNodes` array returned by `getSnapshot`, if any.
 		/// </summary>
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
 		public long[] ChildNodeIndexes { get; set; }
 		/// <summary>
-		/// Gets or sets Attributes of an <code>Element</code> node.
+		/// Gets or sets Attributes of an `Element` node.
 		/// </summary>
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
 		public NameValue[] Attributes { get; set; }
 		/// <summary>
-		/// Gets or sets Indexes of pseudo elements associated with this node in the <code>domNodes</code> array returned by <code>getSnapshot</code>, if any.
+		/// Gets or sets Indexes of pseudo elements associated with this node in the `domNodes` array returned by `getSnapshot`, if any.
 		/// </summary>
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
 		public long[] PseudoElementIndexes { get; set; }
 		/// <summary>
-		/// Gets or sets The index of the node's related layout tree node in the <code>layoutTreeNodes</code> array returned by <code>getSnapshot</code>, if any.
+		/// Gets or sets The index of the node's related layout tree node in the `layoutTreeNodes` array returned by `getSnapshot`, if any.
 		/// </summary>
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
 		public long? LayoutNodeIndex { get; set; }
 		/// <summary>
-		/// Gets or sets Document URL that <code>Document</code> or <code>FrameOwner</code> node points to.
+		/// Gets or sets Document URL that `Document` or `FrameOwner` node points to.
 		/// </summary>
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
 		public string DocumentURL { get; set; }
 		/// <summary>
-		/// Gets or sets Base URL that <code>Document</code> or <code>FrameOwner</code> node uses for URL completion.
+		/// Gets or sets Base URL that `Document` or `FrameOwner` node uses for URL completion.
 		/// </summary>
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
 		public string BaseURL { get; set; }
@@ -87,12 +87,12 @@ namespace MasterDevs.ChromeDevTools.Protocol.Chrome.DOMSnapshot
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
 		public string DocumentEncoding { get; set; }
 		/// <summary>
-		/// Gets or sets <code>DocumentType</code> node's publicId.
+		/// Gets or sets `DocumentType` node's publicId.
 		/// </summary>
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
 		public string PublicId { get; set; }
 		/// <summary>
-		/// Gets or sets <code>DocumentType</code> node's systemId.
+		/// Gets or sets `DocumentType` node's systemId.
 		/// </summary>
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
 		public string SystemId { get; set; }
@@ -102,17 +102,17 @@ namespace MasterDevs.ChromeDevTools.Protocol.Chrome.DOMSnapshot
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
 		public string FrameId { get; set; }
 		/// <summary>
-		/// Gets or sets The index of a frame owner element's content document in the <code>domNodes</code> array returned by <code>getSnapshot</code>, if any.
+		/// Gets or sets The index of a frame owner element's content document in the `domNodes` array returned by `getSnapshot`, if any.
 		/// </summary>
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
 		public long? ContentDocumentIndex { get; set; }
 		/// <summary>
-		/// Gets or sets Index of the imported document's node of a link element in the <code>domNodes</code> array returned by <code>getSnapshot</code>, if any.
+		/// Gets or sets Index of the imported document's node of a link element in the `domNodes` array returned by `getSnapshot`, if any.
 		/// </summary>
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
 		public long? ImportedDocumentIndex { get; set; }
 		/// <summary>
-		/// Gets or sets Index of the content node of a template element in the <code>domNodes</code> array returned by <code>getSnapshot</code>.
+		/// Gets or sets Index of the content node of a template element in the `domNodes` array returned by `getSnapshot`.
 		/// </summary>
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
 		public long? TemplateContentIndex { get; set; }

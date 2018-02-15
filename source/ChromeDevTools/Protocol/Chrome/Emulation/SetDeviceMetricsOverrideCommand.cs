@@ -29,27 +29,27 @@ namespace MasterDevs.ChromeDevTools.Protocol.Chrome.Emulation
 		/// </summary>
 		public bool Mobile { get; set; }
 		/// <summary>
-		/// Gets or sets Scale to apply to resulting view image. Ignored in |fitWindow| mode.
+		/// Gets or sets Scale to apply to resulting view image.
 		/// </summary>
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
 		public double Scale { get; set; }
 		/// <summary>
-		/// Gets or sets Overriding screen width value in pixels (minimum 0, maximum 10000000). Only used for |mobile==true|.
+		/// Gets or sets Overriding screen width value in pixels (minimum 0, maximum 10000000).
 		/// </summary>
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
 		public long? ScreenWidth { get; set; }
 		/// <summary>
-		/// Gets or sets Overriding screen height value in pixels (minimum 0, maximum 10000000). Only used for |mobile==true|.
+		/// Gets or sets Overriding screen height value in pixels (minimum 0, maximum 10000000).
 		/// </summary>
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
 		public long? ScreenHeight { get; set; }
 		/// <summary>
-		/// Gets or sets Overriding view X position on screen in pixels (minimum 0, maximum 10000000). Only used for |mobile==true|.
+		/// Gets or sets Overriding view X position on screen in pixels (minimum 0, maximum 10000000).
 		/// </summary>
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
 		public long? PositionX { get; set; }
 		/// <summary>
-		/// Gets or sets Overriding view Y position on screen in pixels (minimum 0, maximum 10000000). Only used for |mobile==true|.
+		/// Gets or sets Overriding view Y position on screen in pixels (minimum 0, maximum 10000000).
 		/// </summary>
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
 		public long? PositionY { get; set; }
@@ -63,5 +63,10 @@ namespace MasterDevs.ChromeDevTools.Protocol.Chrome.Emulation
 		/// </summary>
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
 		public ScreenOrientation ScreenOrientation { get; set; }
+		/// <summary>
+		/// Gets or sets If set, the visible area of the page will be overridden to this viewport. This viewport change is not observed by the page, e.g. viewport-relative elements do not change positions.
+		/// </summary>
+		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
+		public Page.Viewport Viewport { get; set; }
 	}
 }

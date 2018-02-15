@@ -11,7 +11,7 @@ namespace MasterDevs.ChromeDevTools.Protocol.Chrome.DOMSnapshot
 	public class LayoutTreeNode
 	{
 		/// <summary>
-		/// Gets or sets The index of the related DOM node in the <code>domNodes</code> array returned by <code>getSnapshot</code>.
+		/// Gets or sets The index of the related DOM node in the `domNodes` array returned by `getSnapshot`.
 		/// </summary>
 		public long DomNodeIndex { get; set; }
 		/// <summary>
@@ -27,9 +27,9 @@ namespace MasterDevs.ChromeDevTools.Protocol.Chrome.DOMSnapshot
 		/// Gets or sets The post-layout inline text nodes, if any.
 		/// </summary>
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
-		public CSS.InlineTextBox[] InlineTextNodes { get; set; }
+		public InlineTextBox[] InlineTextNodes { get; set; }
 		/// <summary>
-		/// Gets or sets Index into the <code>computedStyles</code> array returned by <code>getSnapshot</code>.
+		/// Gets or sets Index into the `computedStyles` array returned by `getSnapshot`.
 		/// </summary>
 		[JsonProperty(NullValueHandling = NullValueHandling.Ignore)]
 		public long? StyleIndex { get; set; }

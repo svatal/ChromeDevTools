@@ -6,11 +6,11 @@ using System.Collections.Generic;
 namespace MasterDevs.ChromeDevTools.Protocol.Chrome.Network
 {
 	/// <summary>
-	/// Sets the requests to intercept that match a the provided patterns.
+	/// Sets the requests to intercept that match a the provided patterns and optionally resource types.
 	/// </summary>
-	[CommandResponse(ProtocolName.Network.SetRequestInterceptionEnabled)]
+	[CommandResponse(ProtocolName.Network.SetRequestInterception)]
 	[SupportedBy("Chrome")]
-	public class SetRequestInterceptionEnabledCommandResponse
+	public class SetRequestInterceptionCommandResponse
 	{
 	}
 }
