@@ -1,9 +1,10 @@
-﻿using MasterDevs.ChromeDevTools.Protocol.Chrome.Page;
-using System;
+﻿using System;
 using System.IO;
 using System.Linq;
 using System.Threading;
 using MasterDevs.ChromeDevTools.Protocol.Chrome.DOM;
+using MasterDevs.ChromeDevTools.Protocol.Chrome.Page;
+using SetDeviceMetricsOverrideCommand = MasterDevs.ChromeDevTools.Protocol.Chrome.Emulation.SetDeviceMetricsOverrideCommand;
 using Task = System.Threading.Tasks.Task;
 
 namespace MasterDevs.ChromeDevTools.Sample
